@@ -1,0 +1,13 @@
+.images{
+    width: 100%;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.images-container{
+    margin-bottom: 20px;
+}
+
+.images:hover {
+    transform: scale(1.1);
+}

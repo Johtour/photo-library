@@ -1,0 +1,6 @@
+<div class="image-container" *ngIf="photo">
+    <img class="images" [src]="photo.download_url" alt="test photo">
+</div>
+<div class="btn-parent">
+    <button mat-raised-button color="primary" class="btn" (click)="removePhotoFromFavorites(photo)" [routerLink]="'/favorites'">Remove From Favorites</button>
+</div>

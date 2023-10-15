@@ -1,0 +1,11 @@
+<div>
+    <h2>Your Favorite Photos</h2>
+    <mat-grid-list cols="3" rowHeight="2:1" gutterSize="15px">
+        <mat-grid-tile *ngFor="let photo of localStorageArray">
+            <a [routerLink]="['/', 'photos', photo.id]"><img class="images" [src]="photo.download_url" alt="test photo"></a>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+
+  
